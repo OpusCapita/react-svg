@@ -1,0 +1,31 @@
+.svg-icons-previewer {
+}
+
+.svg-icons-previewer__items-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.svg-icons-previewer__item {
+  display: inline-flex;
+  flex-direction: column;
+  width: 20%;
+  &:hover {
+    background-color: #eee;
+    cursor: pointer;
+  }
+}
+
+.svg-icons-previewer__item-renderer {
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-icons-previewer__item-name {
+  padding: 4px 12px 8px;
+  text-overflow: ellipsis;
+  text-align: center;
+  overflow: hidden;
+}
