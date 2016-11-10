@@ -4,16 +4,13 @@
 .svg-icons-previewer__items-container {
   display: flex;
   flex-wrap: wrap;
+  border-top: 1px solid #eee;
 }
 
 .svg-icons-previewer__item {
   display: inline-flex;
   flex-direction: column;
   width: 20%;
-  &:hover {
-    background-color: #eee;
-    cursor: pointer;
-  }
 }
 
 .svg-icons-previewer__item-renderer {
@@ -28,4 +25,9 @@
   text-overflow: ellipsis;
   text-align: center;
   overflow: hidden;
+}
+
+.svg-icons-previewer__filter-input {
+  max-width: 500px;
+  margin: 0 auto 20px auto;
 }

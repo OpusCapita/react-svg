@@ -10,34 +10,66 @@ class SVGIconsPreviewer extends Component {
     super(props);
     super(props);
     this.state = {
-      filterInputValue: ''
+      filterInputValue: '',
+      filteredIcons: {}
     };
   }
 
+  componentWillMount() {
+    this.setState({ filteredIcons: this.props.icons });
+  }
+
+  componentWillUnmount() {
+    this.clearFilterInputTimeout();
+  }
+
+  clearFilterInputTimeout() {
+    this._filterInputTimeout && clearTimeout(this._filterInputTimeout);
+  }
+
   filterIconsLists(icons, filterText) {
-    icons.filter(component => {
-      return fuzzysearch(filterText.toLowerCase(), component.info.name.toLowerCase())
-    })
+    return icons.filter(icon => fuzzysearch(filterText.toLowerCase(), icon.name.toLowerCase()));
+  }
+
+  handleFilterInputChange(value) {
+    this.clearFilterInputTimeout();
+    this._filterInputTimeout = setTimeout(() => {
+      let filteredIcons = this.filterIconsLists(this.props.icons, value);
+      this.setState({
+        filterInputValue: value,
+        filteredIcons
+      })
+    }, 250);
   }
 
   render() {
-    let { iconsProps, containerStyle } = this.props;
+    let { icons, iconsProps, containerStyle } = this.props;
+    let { filteredIcons } = this.state;
     return (
       <div className="svg-icons-previewer">
+        <div className="svg-icons-previewer__filter-input">
+          <ClearableInput
+            inputSpecificProps={{
+              className: 'form-control',
+              placeholder: 'Search icons',
+              onChange: value => this.handleFilterInputChange(value)
+            }}
+          />
+        </div>
         <div className="svg-icons-previewer__items-container">
           {
-            Object.keys(icons).map((iconName, index) => (
+            filteredIcons.map((icon, index) => (
               <div
                 className="svg-icons-previewer__item"
                 style={containerStyle}
-                title={iconName.replace(/^svg/gi, '')}
+                title={icon.name.replace(/^svg/gi, '')}
                 key={index}
               >
                 <div className="svg-icons-previewer__item-renderer">
-                  {React.createElement(icons[iconName], { ...iconsProps })}
+                  {React.createElement(icon.component, { ...iconsProps })}
                 </div>
                 <div className="svg-icons-previewer__item-name">
-                  <span>{iconName.replace(/^svg/gi, '')}</span>
+                  <span>{icon.name.replace(/^svg/gi, '')}</span>
                 </div>
               </div>
             ))
@@ -50,7 +82,12 @@ class SVGIconsPreviewer extends Component {
 
 SVGIconsPreviewer.propTypes = {
   iconsProps: PropTypes.object,
-  containerStyle: PropTypes.object
+  containerStyle: PropTypes.object,
+  icons: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    component: PropTypes.func
+  }))
 };
 SVGIconsPreviewer.defaultProps = {
+  icons: Object.keys(icons).map(iconName => ({ name: iconName, component: icons[iconName] }))
 };

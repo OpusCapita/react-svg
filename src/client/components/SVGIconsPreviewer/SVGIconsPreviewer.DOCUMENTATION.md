@@ -1,7 +1,16 @@
 ### Synopsis
 
-SVGIconsPreviewer is 
+SVGIconsPreviewer is a component which allow to browse an SVG icons collection.
+Using it with **Showroom** to get a possibility to check colors, sizes and other styles of icons on fly.
 *Write here a short introduction and/or overview that explains **what** component is.*
+
+### Props Reference
+
+| Name                          | Type                  | Description                                                |
+| ------------------------------|:----------------------| -----------------------------------------------------------|
+| icons | arrayOf({ name: string, component: func (ReactClass) }) | Collection of icons |
+| iconsProps | object | Object pass to each icon renderer |
+| containerStyles | object | Icon container styles. |
 
 ### Code Example
 
@@ -9,21 +18,17 @@ SVGIconsPreviewer is
 <SVGIconsPreviewer
 	iconsProps={{
   	style: {
-      fill: '#e70'
+      fill: '#555',
+      width: '48px',
+      height: '48px'
     }
   }}
   containerStyle={{
-    backgroundColor: '#fff',
-    color: '#000'
+    color: '#000',
+    backgrounColor: '#f9f9f9'
   }}
 />
 ```
-
-### Props Reference
-
-| Name                          | Type                  | Description                                                |
-| ------------------------------|:----------------------| -----------------------------------------------------------|
-| demoProp | string | Write a description of the property |
 
 ### Contributors
 *Write here contributor names/contacts*
