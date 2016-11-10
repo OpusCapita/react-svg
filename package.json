@@ -3,10 +3,9 @@
   "version": "0.0.1",
   "description": "Start write new project with no effort.",
   "scripts": {
-    "build": "rimraf generate-icons-result && node generate-icons-scripts/make.js && webpack --config ./webpack.production.config",
+    "build": "webpack --config ./webpack.production.config",
     "link-mode": "webpack --watch --config ./webpack.link.config.js",
     "lint": "eslint src/client",
-    "prestart": "rimraf generate-icons-result && node generate-icons-scripts/make.js",
     "start": "node www/index"
   },
   "author": {
