@@ -16,7 +16,7 @@ Use it in collaboration with **Showroom** to get a possibility to check colors, 
 
 You can `require` whole directory of files using **webpack**.
 
-Code looks like this:
+Something like this:
 
 ```
 function requireAll(requireContext) {
@@ -36,8 +36,8 @@ In this case don't forget install **raw-loader**:
 
 ```
 <SVGIconsPreviewer
-	iconsProps={{
-  	style: {
+  iconsProps={{
+    style: {
       fill: '#333',
       width: '48px',
       height: '48px'

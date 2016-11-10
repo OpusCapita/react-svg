@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+
+.christmas-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(200,70,70);
+  height: 512px;
+  position: relative;
+  background: linear-gradient( 90deg, rgba(255,255,255,0) 50%, rgba(255,255,255,.4) 50%);
+  background-size: .12em 100%;
+  font: 25em/1 Lobster, Arial;
+
+  .text--line {
+    font-size: .5em;
+  }
+
+  svg {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+  }
+
+  .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-width: 20px;
+  }
+  .text-copy--shadow {
+    fill: rgba(0,0,0,.25);
+    transform: translate(0, .065em);
+  }
+  .r-fill {
+    fill: url(#p-dottes);
+    transform-origin: center;
+    animation: rotate 50s linear infinite;
+  }
+
+  /* Fix for firefox */
+  .r-fill--color {
+    fill: hsl(10,100%,55%);
+  }
+}
+
+.christmas-svg-bg {
+  background-color: #e70;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

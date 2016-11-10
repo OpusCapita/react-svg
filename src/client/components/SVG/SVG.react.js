@@ -6,11 +6,11 @@ let defaultStyle = { height: '24px', width: '24px' };
 export default
 class SVG extends Component {
   render() {
-    let { svg, children } = this.props;
+    let { svg, children, className } = this.props;
     let style = Object.assign({}, defaultStyle, this.props.style);
     return (
       <div
-        className="svg"
+        className={`svg ${className}`}
         dangerouslySetInnerHTML={{ __html: svg }}
         style={style}
       >
@@ -22,10 +22,12 @@ class SVG extends Component {
 
 SVG.propTypes = {
   style: PropTypes.object,
-  svg: PropTypes.string
+  svg: PropTypes.string,
+  className: PropTypes.string
 };
 
 SVG.defaultProps = {
   style: { },
-  svg: `<svg></svg>`
+  svg: `<svg></svg>`,
+  className: ''
 };
