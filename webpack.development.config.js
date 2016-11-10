@@ -78,7 +78,6 @@ module.exports = {
         test: /.jsx?$/,
         loader: 'babel',
         include: [
-          path.join(__dirname, 'generate-icons-result'),
           path.join(__dirname, 'src'),
           path.join(__dirname, 'www')
         ]

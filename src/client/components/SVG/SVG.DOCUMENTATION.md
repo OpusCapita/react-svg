@@ -1,14 +1,14 @@
 ### Synopsis
 
-SVG is a simples
+Simple SVG renderer
 
 ### Props Reference
 
 | Name                          | Type                  | Description                                                |
 | ------------------------------|:----------------------| -----------------------------------------------------------|
+| className | string | Default behaviour |
 | style | string | Write a description of the property |
 | svg | string | Write a description of the property |
-| className | string | Default behaviour |
 
 ### Tips
 

@@ -8,9 +8,9 @@ Use it in collaboration with **Showroom** to get a possibility to check colors, 
 
 | Name                          | Type                  | Description                                                |
 | ------------------------------|:----------------------| -----------------------------------------------------------|
+| containerStyles | object | Icon container styles |
 | icons | arrayOf({ name: string, svg: string }) | Collection of icons |
 | iconsProps | object | Object pass to each icon renderer |
-| containerStyles | object | Icon container styles |
 
 ### Tips
 

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import './SVGIconsPreviewer.less';
 import fuzzysearch from 'fuzzysearch';
-import ClearableInput from '../ClearableInput';
+import ClearableInput from '../../external_components/ClearableInput';
 import SVG from '../SVG';
 
 export default
