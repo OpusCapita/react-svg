@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import './SVGIconsPreviewer.less';
 import fuzzysearch from 'fuzzysearch';
 import ClearableInput from '../ClearableInput';
-import icons from '../../../../generate-icons-result';
+import SVG from '../SVG';
 
 export default
 class SVGIconsPreviewer extends Component {
@@ -66,7 +66,7 @@ class SVGIconsPreviewer extends Component {
                 key={index}
               >
                 <div className="svg-icons-previewer__item-renderer">
-                  {React.createElement(icon.component, { ...iconsProps })}
+                  {<SVG svg={icon.svg} { ...iconsProps } />}
                 </div>
                 <div className="svg-icons-previewer__item-name">
                   <span>{icon.name.replace(/^svg/gi, '')}</span>
@@ -85,9 +85,10 @@ SVGIconsPreviewer.propTypes = {
   containerStyle: PropTypes.object,
   icons: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
-    component: PropTypes.func
+    svg: PropTypes.string
   }))
 };
+
 SVGIconsPreviewer.defaultProps = {
-  icons: Object.keys(icons).map(iconName => ({ name: iconName, component: icons[iconName] }))
+  icons: []
 };

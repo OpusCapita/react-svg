@@ -1,7 +1,7 @@
 ### Synopsis
 
 SVGIconsPreviewer is a component which allow to browse an SVG icons collection.
-Using it with **Showroom** to get a possibility to check colors, sizes and other styles of icons on fly.
+Use it in collaboration with **Showroom** to get a possibility to check colors, sizes and other styles of icons on fly.
 *Write here a short introduction and/or overview that explains **what** component is.*
 
 ### Props Reference
@@ -27,6 +27,7 @@ Using it with **Showroom** to get a possibility to check colors, sizes and other
     color: '#000',
     backgrounColor: '#f9f9f9'
   }}
+  icons={_scope.state.icons}
 />
 ```
 
