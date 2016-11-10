@@ -3,6 +3,13 @@
 SVG is 
 *Write here a short introduction and/or overview that explains **what** component is.*
 
+### Props Reference
+
+| Name                          | Type                  | Description                                                |
+| ------------------------------|:----------------------| -----------------------------------------------------------|
+| style | string | Write a description of the property |
+| svg | string | Write a description of the property |
+
 ### Code Example
 
 ```
@@ -23,17 +30,9 @@ SVG is
 />
 ```
 
-### Props Reference
-
-| Name                          | Type                  | Description                                                |
-| ------------------------------|:----------------------| -----------------------------------------------------------|
-| style | string | Write a description of the property |
-| svg | string | Write a description of the property |
 
 ### Contributors
-*Write here contributor names/contacts*
-
-[GIT REPOSITORY](http://buildserver.jcatalog.com/gitweb/?p=js-react-application-generator.git)
+Kirill Volkovich
 
 ### Component Name
 

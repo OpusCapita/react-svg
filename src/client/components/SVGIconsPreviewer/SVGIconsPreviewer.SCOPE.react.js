@@ -3,12 +3,12 @@ import { showroomScopeDecorator } from 'jcatalog-showroom';
 
 function requireAll(requireContext) {
   return requireContext.keys().map(key => ({
-    name: key,
+    name: key.replace(/(\.svg$|^\.\/)/gi, ''),
     svg: requireContext(key)
   }));
 }
 
-let icons = requireAll(require.context( '!!raw-loader!jcatalog-svg-icons/lib', true, /.*/));
+let icons = requireAll(require.context( '!!raw-loader!jcatalog-svg-icons/lib', true, /.*\.svg$/));
 
 @showroomScopeDecorator
 class SVGIconsPreviewerSCOPE extends Component {
