@@ -10,19 +10,33 @@ SVG is a simples
 | svg | string | Write a description of the property |
 | className | string | Default behaviour |
 
+### Tips
+
+You can `require` an **SVG** file content using **webpack**.
+
+```
+let ShoppingCartIcon = require('!!raw-loader/jcatalog-svg-icons/lib/add_shopping_cart.svg');
+
+...
+<SVG
+  svg={ShoppingCartIcon}
+/>
+...
+```
+
+Don't forget install **raw-loader**:
+`npm install --save-dev -E raw-loader`
+
 ### Code Example
 
 ```
 <SVG
-  svg={`<svg viewBox="0 0 120 120" version="1.1"> <circle cx="60" cy="60" r="50"/> </svg>`}
-/>
-<SVG
-  style={{ width: '32px', height: '32px' }}
-  svg={`<svg viewBox="0 0 120 120" version="1.1"> <circle cx="60" cy="60" r="50"/> </svg>`}
-/>
-<SVG
   style={{ width: '48px', height: '48px', fill: '#e70' }}
-  svg={`<svg viewBox="0 0 120 120" version="1.1"> <circle cx="60" cy="60" r="50"/> </svg>`}
+  svg={`
+    <svg viewBox="0 0 120 120" version="1.1">
+      <circle cx="60" cy="60" r="50"/>
+    </svg>
+  `}
 />
 ```
 
