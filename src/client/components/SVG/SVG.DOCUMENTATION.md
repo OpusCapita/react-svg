@@ -31,7 +31,7 @@ Don't forget install **raw-loader**:
 
 ```
 <SVG
-  style={{ width: '48px', height: '48px', fill: '#e70' }}
+  style={{ width: '100px', height: '100px', fill: '#000' }}
   svg={`
     <svg viewBox="0 0 120 120" version="1.1">
       <circle cx="60" cy="60" r="50"/>

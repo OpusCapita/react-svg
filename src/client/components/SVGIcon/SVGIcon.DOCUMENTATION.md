@@ -1,7 +1,12 @@
 ### Synopsis
 
-Simple SVGIcon with **minimalistic API** to use in most cases.
-It use **SVG** component inside. You can pass **SVG** specific properties.
+A wrapper for **SVG component** for icons rendering.
+You can pass any **SVG component specific properties** to this component.
+
+### FAQ
+
+Q: Where I can get an icons *.svg files? 
+A: You can use `jcatalog-svg-icons` package.
 
 ### Code Example
 
@@ -18,13 +23,14 @@ It use **SVG** component inside. You can pass **SVG** specific properties.
 
 | Name                          | Type                  | Description                                                |
 | ------------------------------|:----------------------| -----------------------------------------------------------|
-| bgColor | string | Icon background color |
-| color | string | Icon fill color |
-| size | string | Icon size |
-| svg | string | Write a description of the property |
+| bgColor | string | Background color. Example: `#e70` |
+| color | string | Fill color. Example: `#fff` |
+| size | string | Size. Example: `48px` |
+| svg | string | SVG content string. Example: `<svg><circle r="100"/></svg>` |
 
 ### Contributors
-| svg | string | Write a description of the property |
+
+Kirill Volkovich
 
 ### Component Name
 
