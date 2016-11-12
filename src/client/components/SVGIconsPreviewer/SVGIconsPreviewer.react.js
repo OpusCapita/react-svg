@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import './SVGIconsPreviewer.less';
+import s from './SVGIconsPreviewer.less';
 import fuzzysearch from 'fuzzysearch';
 import ClearableInput from '../../external_components/ClearableInput';
 import SVG from '../SVG';
@@ -46,8 +46,8 @@ class SVGIconsPreviewer extends Component {
     let { icons, iconsProps, containerStyle } = this.props;
     let { filteredIcons } = this.state;
     return (
-      <div className="svg-icons-previewer">
-        <div className="svg-icons-previewer__filter-input">
+      <div className={s.svgIconsPreviewer}>
+        <div className={s.filterInput}>
           <ClearableInput
             inputSpecificProps={{
               className: 'form-control',
@@ -56,19 +56,19 @@ class SVGIconsPreviewer extends Component {
             }}
           />
         </div>
-        <div className="svg-icons-previewer__items-container">
+        <div className={s.itemsContainer}>
           {
             filteredIcons.map((icon, index) => (
               <div
-                className="svg-icons-previewer__item"
+                className={s.item}
                 style={containerStyle}
                 title={icon.name.replace(/^svg/gi, '')}
                 key={index}
               >
-                <div className="svg-icons-previewer__item-renderer">
+                <div className={s.itemRenderer}>
                   {<SVG svg={icon.svg} { ...iconsProps } />}
                 </div>
-                <div className="svg-icons-previewer__item-name">
+                <div className={s.itemName}>
                   <span>{icon.name.replace(/^svg/gi, '')}</span>
                 </div>
               </div>

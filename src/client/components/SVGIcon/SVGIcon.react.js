@@ -1,14 +1,14 @@
 import React, { Component, PropTypes } from 'react';
 import SVG from '../SVG';
-import './SVGIcon.less';
 
 export default
 class SVGIcon extends Component {
   render() {
-    let { className, size, color, bgColor } = this.props;
+    let { className, size, color, bgColor, ...restProps } = this.props;
     let style = Object.assign({}, { width: '80%', height: '80%', fill: color }, this.props.style);
     return (
       <div
+        className={className}
         style={{
           alignItems: 'center',
           backgroundColor: bgColor,
@@ -18,7 +18,7 @@ class SVGIcon extends Component {
           width: size
         }}
       >
-        <SVG { ...this.props } style={style} />
+        <SVG { ...restProps } style={style} />
       </div>
     );
   }

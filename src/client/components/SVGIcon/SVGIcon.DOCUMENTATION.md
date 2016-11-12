@@ -26,7 +26,7 @@ A: You can use `jcatalog-svg-icons` package.
 | bgColor | string | Background color. Example: `#e70` |
 | color | string | Fill color. Example: `#fff` |
 | size | string | Size. Example: `48px` |
-| svg | string | SVG content string. Example: `<svg><circle r="100"/></svg>` |
+| svg | string | SVG content string. Example: `<svg viewBox="0 0 120 120" version="1.1"><circle cx="60" cy="60" r="50"/></svg>` |
 
 ### Contributors
 

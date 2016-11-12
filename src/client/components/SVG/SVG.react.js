@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import './SVG.less';
+import s from './SVG.less';
 
 let defaultStyle = { height: '24px', width: '24px' };
 
@@ -10,7 +10,7 @@ class SVG extends Component {
     let style = Object.assign({}, defaultStyle, this.props.style);
     return (
       <div
-        className={`svg ${className}`}
+        className={`${s.svg} ${className}`}
         dangerouslySetInnerHTML={{ __html: svg }}
         style={style}
       >
