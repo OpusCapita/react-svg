@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import s from './SVGIconsPreviewer.less';
 import fuzzysearch from 'fuzzysearch';
-import ClearableInput from '../../external_components/ClearableInput';
 import SVG from '../SVG';
 
 export default
@@ -31,7 +30,8 @@ class SVGIconsPreviewer extends Component {
     return icons.filter(icon => fuzzysearch(filterText.toLowerCase(), icon.name.toLowerCase()));
   }
 
-  handleFilterInputChange(value) {
+  handleFilterInputChange(event) {
+    let value = event.target.value;
     this.clearFilterInputTimeout();
     this._filterInputTimeout = setTimeout(() => {
       let filteredIcons = this.filterIconsLists(this.props.icons, value);
@@ -48,12 +48,10 @@ class SVGIconsPreviewer extends Component {
     return (
       <div className={s.svgIconsPreviewer}>
         <div className={s.filterInput}>
-          <ClearableInput
-            inputSpecificProps={{
-              className: 'form-control',
-              placeholder: 'Search icons',
-              onChange: value => this.handleFilterInputChange(value)
-            }}
+          <input
+            className="form-control"
+            placeholder="Search icons"
+            onChange={this.handleFilterInputChange.bind(this)}
           />
         </div>
         <div className={s.itemsContainer}>
