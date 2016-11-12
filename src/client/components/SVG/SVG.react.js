@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import s from './SVG.less';
+import s from './SVG.module.less';
 
 let defaultStyle = { height: '24px', width: '24px' };
 

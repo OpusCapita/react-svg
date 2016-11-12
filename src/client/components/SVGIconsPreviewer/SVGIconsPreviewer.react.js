@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import s from './SVGIconsPreviewer.less';
+import s from './SVGIconsPreviewer.module.less';
 import fuzzysearch from 'fuzzysearch';
 import SVG from '../SVG';
 
