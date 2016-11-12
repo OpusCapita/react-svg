@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import s from './SVGIconsPreviewer.module.less';
 import fuzzysearch from 'fuzzysearch';
-import SVG from '../SVG';
+import SVGIcon from '../SVGIcon';
 
 export default
 class SVGIconsPreviewer extends Component {
@@ -43,8 +43,12 @@ class SVGIconsPreviewer extends Component {
   }
 
   render() {
-    let { icons, iconsProps, containerStyle } = this.props;
+    let { icons, iconsProps, containerBgColor } = this.props;
     let { filteredIcons } = this.state;
+    let containerStyle = {
+      backgroundColor: containerBgColor,
+      color: (iconsProps && iconsProps.color) || '#000'
+    }
     return (
       <div className={s.svgIconsPreviewer}>
         <div className={s.filterInput}>
@@ -64,7 +68,7 @@ class SVGIconsPreviewer extends Component {
                 key={index}
               >
                 <div className={s.itemRenderer}>
-                  {<SVG svg={icon.svg} { ...iconsProps } />}
+                  {<SVGIcon svg={icon.svg} { ...iconsProps } />}
                 </div>
                 <div className={s.itemName}>
                   <span>{icon.name.replace(/^svg/gi, '')}</span>
@@ -80,7 +84,7 @@ class SVGIconsPreviewer extends Component {
 
 SVGIconsPreviewer.propTypes = {
   iconsProps: PropTypes.object,
-  containerStyle: PropTypes.object,
+  bgColor: PropTypes.object,
   icons: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     svg: PropTypes.string

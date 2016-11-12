@@ -8,9 +8,9 @@ Use it in collaboration with **Showroom** to get a possibility to check colors, 
 
 | Name                          | Type                  | Description                                                |
 | ------------------------------|:----------------------| -----------------------------------------------------------|
-| containerStyles | object | Icon container styles |
+| containerBgColor | string | Background color of previewer container |
 | icons | arrayOf({ name: string, svg: string }) | Collection of icons |
-| iconsProps | object | Object pass to each icon renderer |
+| iconsProps | object | Object pass to each **SVGIcon** component |
 
 ### Tips
 
@@ -36,18 +36,13 @@ In this case don't forget install **raw-loader**:
 
 ```
 <SVGIconsPreviewer
-  iconsProps={{
-    style: {
-      fill: '#333',
-      width: '48px',
-      height: '48px'
-    }
-  }}
-  containerStyle={{
-    backgroundColor: '#fff',
-    color: '#000'
-  }}
+  containerBgColor="#fff"
   icons={_scope.state.icons}
+  iconsProps={{
+    color: '#333',
+    bgColor: '#fff',
+    size: '48px'
+  }}
 />
 ```
 
