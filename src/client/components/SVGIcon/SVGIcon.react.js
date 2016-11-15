@@ -5,7 +5,7 @@ export default
 class SVGIcon extends Component {
   render() {
     let { className, size, color, bgColor, ...restProps } = this.props;
-    let style = Object.assign({}, { width: '80%', height: '80%', fill: color }, this.props.style);
+    let style = Object.assign({}, { fill: color }, this.props.style);
     return (
       <div
         className={className}
