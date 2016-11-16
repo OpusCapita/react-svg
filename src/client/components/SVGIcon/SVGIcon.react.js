@@ -1,14 +1,15 @@
 import React, { Component, PropTypes } from 'react';
+import s from './SVGIcon.module.less';
 import SVG from '../SVG';
 
 export default
 class SVGIcon extends Component {
   render() {
     let { className, size, color, bgColor, ...restProps } = this.props;
-    let style = Object.assign({}, { fill: color }, this.props.style);
+    let style = Object.assign({}, { fill: color, width: '100%', height: '100%' }, this.props.style);
     return (
       <div
-        className={className}
+        className={`${s.svgIcon} ${className || ''}`}
         style={{
           alignItems: 'center',
           backgroundColor: bgColor,
