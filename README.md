@@ -6,6 +6,8 @@ For components overview:
 * Run `npm install`
 * Run `npm start`
 
+**MORE DOCUMENTATION AND EXAMPLES COMING SOON**
+
 ## Contributors
 
 Kirill Volkovich
