@@ -1,3 +1,5 @@
+# js-react-svg
+
 ## Synopsis
 
 React components for easy work with [**Scalable Vector Graphics**](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
