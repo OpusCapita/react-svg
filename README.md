@@ -1,4 +1,4 @@
-# SVG
+# React SVG
 
 ## Synopsis
 
