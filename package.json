@@ -1,5 +1,5 @@
 {
-  "name": "jcatalog-react-ui-svg",
+  "name": "@opuscapita/react-ui-svg",
   "version": "0.0.11",
   "description": "React components for SVG (Scalable Vector Graphic).",
   "scripts": {
@@ -18,13 +18,17 @@
     "lib",
     "README.md"
   ],
-  "license": "jCatalog",
+  "license": "UNLICENSED",
   "readme": "README.md",
   "peerDependencies": {
     "react": "0.14.8",
     "react-dom": "0.14.8"
   },
   "devDependencies": {
+    "@opuscapita/eslint-config": "1.0.0",
+    "@opuscapita/showroom-client": "1.0.3",
+    "@opuscapita/showroom-server": "1.0.3",
+    "@opuscapita/svg-icons": "0.0.5",
     "autoprefixer": "6.4.1",
     "babel-cli": "6.5.1",
     "babel-core": "6.4.0",
@@ -41,15 +45,12 @@
     "cross-env": "1.0.7",
     "css-loader": "0.21.0",
     "eslint": "2.11.0",
-    "eslint-config-jcatalog": "1.0.2",
     "eslint-plugin-react": "5.1.1",
     "express": "4.13.4",
     "file-loader": "0.9.0",
     "fs-extra": "1.0.0",
     "fuzzysearch": "1.0.3",
     "globule": "1.1.0",
-    "jcatalog-showroom": "1.0.3",
-    "jcatalog-showroom-server": "1.0.1",
     "json-loader": "0.5.4",
     "less": "2.3.1",
     "less-loader": "2.2.2",
@@ -65,7 +66,6 @@
     "webpack": "1.12.2",
     "webpack-bundle-analyzer": "1.5.0",
     "webpack-dev-middleware": "1.5.1",
-    "write-file-webpack-plugin": "3.3.0",
-    "@opuscapita/svg-icons": "0.0.5"
+    "write-file-webpack-plugin": "3.3.0"
   }
 }
