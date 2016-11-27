@@ -28,7 +28,7 @@
     "@opuscapita/eslint-config": "1.0.0",
     "@opuscapita/showroom-client": "1.0.3",
     "@opuscapita/showroom-server": "1.0.3",
-    "@opuscapita/svg-icons": "0.0.5",
+    "@opuscapita/svg-icons": "1.0.0",
     "autoprefixer": "6.4.1",
     "babel-cli": "6.5.1",
     "babel-core": "6.4.0",

@@ -26,7 +26,7 @@ function requireAll(requireContext) {
   }));
 }
 
-let icons = requireAll(require.context( '!!raw-loader!jcatalog-svg-icons/lib', true, /.*\.svg$/));
+let icons = requireAll(require.context( '!!raw-loader!@opuscapita/svg-icons/lib', true, /.*\.svg$/));
 ```
 
 In this case don't forget install **raw-loader**:
