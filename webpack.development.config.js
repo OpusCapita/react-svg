@@ -85,7 +85,11 @@ module.exports = {
         include: [
           path.join(__dirname, 'src'),
           path.join(__dirname, 'www')
-        ]
+        ],
+        query: {
+          presets: ['es2015', 'react', 'stage-0'],
+          plugins: ['transform-decorators-legacy']
+        }
       }
     ]
   }

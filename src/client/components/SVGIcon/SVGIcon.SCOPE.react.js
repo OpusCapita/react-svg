@@ -8,7 +8,7 @@ function requireAll(requireContext) {
   }));
 }
 
-let icons = requireAll(require.context( '!!raw-loader!@opuscapita/svg-icons/lib', true, /.*\.svg$/));
+let icons = requireAll(require.context('!!raw-loader!@opuscapita/ui-svg-icons/lib', true, /.*\.svg$/));
 
 @showroomScopeDecorator
 class SVGIconSCOPE extends Component {
@@ -18,7 +18,7 @@ class SVGIconSCOPE extends Component {
   }
 
   getIcon(name) {
-   return this.state.icons.find(icon => icon.name === name).svg
+    return this.state.icons.find(icon => icon.name === name).svg
   }
 
   render() {
