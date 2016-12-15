@@ -1,4 +1,4 @@
-# React - SVG
+# OpusCapita react-svg
 
 ## Synopsis
 
@@ -16,4 +16,4 @@ Kirill Volkovich
 
 ## License
 
-Opus Capita 2016
+**OpusCapita react-svg** is licensed under the Apache License, Version 2.0. See [LICENSE](./LICENSE) for the full license text.

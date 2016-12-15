@@ -1,3 +1,7 @@
+### Component Name
+
+SVG
+
 ### Synopsis
 
 Simple SVG renderer
@@ -10,22 +14,6 @@ Simple SVG renderer
 | style | string | Write a description of the property |
 | svg | string | Write a description of the property |
 
-### Tips
-
-You can `require` an **SVG** file content using **webpack**.
-
-```
-let ShoppingCartIcon = require('!!raw-loader/@opuscapita/ui-svg-icons/lib/add_shopping_cart.svg');
-
-...
-<SVG
-  svg={ShoppingCartIcon}
-/>
-...
-```
-
-Don't forget install **raw-loader**:
-`npm install --save-dev -E raw-loader`
 
 ### Code Example
 
@@ -40,14 +28,19 @@ Don't forget install **raw-loader**:
 />
 ```
 
+### Tips
 
-### Contributors
-Kirill Volkovich
+You can `require` an **SVG** file content using **webpack**.
 
-### Component Name
+```
+let ShoppingCartIcon = require('!!raw-loader/opuscapita-ui-svg-icons/lib/add_shopping_cart.svg');
 
-SVG
+...
+<SVG
+  svg={ShoppingCartIcon}
+/>
+...
+```
 
-### License
-
-Licensed by © 2016 OpusCapita
+Don't forget install **raw-loader**:
+`npm install --save-dev -E raw-loader`

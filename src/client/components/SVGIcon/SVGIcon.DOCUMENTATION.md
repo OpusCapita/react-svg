@@ -1,12 +1,11 @@
+### Component Name
+
+SVGIcon
+
 ### Synopsis
 
 A wrapper for **SVG component** for icons rendering.
 You can pass any **SVG component specific properties** to this component.
-
-### FAQ
-
-Q: Where I can get an icons *.svg files? 
-A: You can use `@opuscapita/svg-icons` package.
 
 ### Code Example
 
@@ -28,15 +27,7 @@ A: You can use `@opuscapita/svg-icons` package.
 | size | string | Size. Example: `48px` |
 | svg | string | SVG content string. Example: `<svg viewBox="0 0 120 120" version="1.1"><circle cx="60" cy="60" r="50"/></svg>` |
 
-### Contributors
+### FAQ
 
-Kirill Volkovich
-
-### Component Name
-
-SVGIcon
-
-### License
-
-Licensed by © 2016 OpusCapita
-
+Q: Where I can get an icons *.svg files? 
+A: You can use `opuscapita-svg-icons` package.

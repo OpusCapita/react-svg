@@ -1,3 +1,7 @@
+### Component Name
+
+SVGIconsPreviewer
+
 ### Synopsis
 
 **Browse an SVG icons collection.**
@@ -12,25 +16,6 @@ Use it in collaboration with **Showroom** to get a possibility to check colors, 
 | icons | arrayOf({ name: string, svg: string }) | Collection of icons |
 | iconsProps | object | Object pass to each **SVGIcon** component |
 
-### Tips
-
-You can `require` whole directory of files using **webpack**.
-
-Something like this:
-
-```
-function requireAll(requireContext) {
-  return requireContext.keys().map(key => ({
-    name: key.replace(/(\.svg$|^\.\/)/gi, ''),
-    svg: requireContext(key)
-  }));
-}
-
-let icons = requireAll(require.context( '!!raw-loader!@opuscapita/ui-svg-icons/lib', true, /.*\.svg$/));
-```
-
-In this case don't forget install **raw-loader**:
-`npm install --save-dev -E raw-loader`
 
 ### Code Example
 
@@ -46,13 +31,22 @@ In this case don't forget install **raw-loader**:
 />
 ```
 
-### Contributors
-Kirill Volkovich
+### Tips
 
-### Component Name
+You can `require` whole directory of files using **webpack**.
 
-SVGIconsPreviewer
+Something like this:
 
-### License
+```
+function requireAll(requireContext) {
+  return requireContext.keys().map(key => ({
+    name: key.replace(/(\.svg$|^\.\/)/gi, ''),
+    svg: requireContext(key)
+  }));
+}
 
-Licensed by © 2016 OpusCapita
+let icons = requireAll(require.context( '!!raw-loader!opuscapita-ui-svg-icons/lib', true, /.*\.svg$/));
+```
+
+In this case don't forget install **raw-loader**:
+`npm install --save-dev -E raw-loader`

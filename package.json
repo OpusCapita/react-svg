@@ -1,5 +1,5 @@
 {
-  "name": "@opuscapita/react-ui-svg",
+  "name": "opuscapita-react-ui-svg",
   "version": "1.0.1",
   "description": "React components for SVG (Scalable Vector Graphic).",
   "scripts": {
@@ -20,8 +20,10 @@
     "lib",
     "README.md"
   ],
-  "license": "UNLICENSED",
-  "readme": "README.md",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/OpusCapitaBES/js-react-ui-svg"
@@ -31,11 +33,11 @@
     "react-dom": "0.14.8"
   },
   "devDependencies": {
-    "@opuscapita/eslint-config": "1.0.0",
-    "@opuscapita/npm-scripts": "1.0.0",
-    "@opuscapita/showroom-client": "1.0.4",
-    "@opuscapita/showroom-server": "1.0.4",
-    "@opuscapita/ui-svg-icons": "1.0.0",
+    "eslint-config-opuscapita": "1.0.3",
+    "opuscapita-npm-scripts": "1.0.5",
+    "opuscapita-showroom-client": "1.0.10",
+    "opuscapita-showroom-server": "1.0.10",
+    "opuscapita-ui-svg-icons": "1.0.3",
     "autoprefixer": "6.4.1",
     "babel-cli": "6.5.1",
     "babel-core": "6.4.0",
