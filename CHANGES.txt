@@ -1,4 +1,11 @@
 
+Release 1.0.1 Thu Dec 15 2016 11:49:16 GMT+0300 (+03)
+=======================================================
+
+ - Fixed eslint config import (kirillvolkovich <kirill.volkovich@jcatalog.com>, Thu Dec 15 11:49:03 2016 +0300)
+ - Prepared to publish public to npm registry (kirillvolkovich <kirill.volkovich@jcatalog.com>, Thu Dec 15 11:47:41 2016 +0300)
+ - Updating to a version to  1.0.1 (Alexey Sergeev <alexey.sergeev@jcatalog.com>, Tue Nov 29 10:21:44 2016 +0300)
+
 Release 1.0.0 Tue Nov 29 2016 10:21:37 GMT+0300 (MSK)
 =======================================================
 
