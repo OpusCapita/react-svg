@@ -1,4 +1,11 @@
 
+Release 1.0.2 Fri Dec 16 2016 12:28:51 GMT+0300 (+03)
+=======================================================
+
+ - Sorted dependency list (kirillvolkovich <kirill.volkovich@jcatalog.com>, Fri Dec 16 12:28:45 2016 +0300)
+ - Changed npm registry back to private (kirillvolkovich <kirill.volkovich@jcatalog.com>, Thu Dec 15 12:10:00 2016 +0300)
+ - Updating to a version to  1.0.2 (kirillvolkovich <kirill.volkovich@jcatalog.com>, Thu Dec 15 11:49:27 2016 +0300)
+
 Release 1.0.1 Thu Dec 15 2016 11:49:16 GMT+0300 (+03)
 =======================================================
 
