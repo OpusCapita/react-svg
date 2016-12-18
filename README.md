@@ -9,11 +9,3 @@ For components overview:
 * Run `npm start`
 
 **MORE DOCUMENTATION AND EXAMPLES COMING SOON**
-
-## Contributors
-
-Kirill Volkovich
-
-## License
-
-**OpusCapita react-svg** is licensed under the Apache License, Version 2.0. See [LICENSE](./LICENSE) for the full license text.
