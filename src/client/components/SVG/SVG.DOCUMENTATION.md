@@ -8,11 +8,11 @@ Simple SVG renderer
 
 ### Props Reference
 
-| Name                          | Type                  | Description                                                |
-| ------------------------------|:----------------------| -----------------------------------------------------------|
-| className | string | Default behaviour |
-| style | string | Write a description of the property |
-| svg | string | Write a description of the property |
+| Name                           | Type                    | Description                                                 |
+| ------------------------------ | :---------------------- | ----------------------------------------------------------- |
+| className                      | string                  | Default behaviour                                           |
+| style                          | string                  | Write a description of the property                         |
+| svg                            | string                  | Write a description of the property                         |
 
 
 ### Code Example

@@ -1,5 +1,5 @@
 {
-  "name": "opuscapita-react-ui-svg",
+  "name": "@opuscapita/react-svg",
   "version": "1.0.4",
   "description": "React components for SVG (Scalable Vector Graphic).",
   "scripts": {
@@ -16,14 +16,11 @@
     "lib",
     "README.md"
   ],
-  "license": "UNLICENSED",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/OpusCapitaBES/js-react-ui-svg"
-  },
+  "license": "Apache-2.0",
+  "repository": "OpusCapitaBES/js-react-ui-svg",
   "peerDependencies": {
-    "react": "0.14.8",
-    "react-dom": "0.14.8"
+    "react": ">= 0.14.8",
+    "react-dom": ">= 0.14.8"
   },
   "devDependencies": {
     "autoprefixer": "6.4.1",
@@ -61,6 +58,8 @@
     "postcss-loader": "0.13.0",
     "postcss-modules": "0.5.2",
     "raw-loader": "0.5.1",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
     "rimraf": "2.5.2",
     "source-map-loader": "0.1.5",
     "style-loader": "0.13.1",

@@ -1,11 +1,32 @@
-# OpusCapita react-svg
+# React SVG
 
 ## Synopsis
 
-React components for easy work with [**Scalable Vector Graphics**](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
-For components overview:
-* Clone repository
-* Run `npm install`
-* Run `npm start`
+[Demo and documentation](https://opuscapitabes.github.io/js-react-ui-svg)
 
-**MORE DOCUMENTATION AND EXAMPLES COMING SOON**
+> Powered by [opuscapita-showroom](https://github.com/OpusCapitaBES/js-react-showroom-client)
+
+## Usage
+
+#### Install package:
+
+`yarn add @opuscapita/react-svg`
+
+#### Import component
+
+```
+import { SVG } from '@opuscapita/react-svg
+import SVGIcon from '@opuscapita/react-svg/lib/SVGIcon
+...
+```
+
+## Contributors
+
+|                                                                                  |                                                      |
+| ------------------------------                                                   | :----------------------                              |
+| <img src="https://avatars.githubusercontent.com/u/24603787?v=3" width="100px;"/> | [Alexey Sergeev](https://github.com/asergeev-sc)     |
+| <img src="https://avatars.githubusercontent.com/u/24652543?v=3" width="100px;"/> | [Kirill Volkovich](https://github.com/kvolkovich-sc) |
+
+## License
+
+Licensed under the Apache License, Version 2.0. See [LICENSE](./LICENSE) for the full license text.
