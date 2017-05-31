@@ -12,7 +12,7 @@ module.exports = {
     publicPath: '/',
     path: path.resolve(__dirname, './lib'),
     filename: `index.js`,
-    library: 'demopage',
+    library: 'react-svg',
     libraryTarget: 'umd'
   },
   devtool: 'inline-source-map',
@@ -21,7 +21,9 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env.HOST': JSON.stringify(host),
-      'process.env.PORT': JSON.stringify(port)
+      'process.env.PORT': JSON.stringify(port),
+      // Uncomment next line if animation perf is bad
+      'process.env.NODE_ENV': '"production"'
     }),
   ],
   externals: {
