@@ -86,7 +86,7 @@ class SVGIconsPreviewer extends Component {
 
 SVGIconsPreviewer.propTypes = {
   iconsProps: PropTypes.object,
-  containerBgColor: PropTypes.object,
+  containerBgColor: PropTypes.string,
   icons: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     svg: PropTypes.string
