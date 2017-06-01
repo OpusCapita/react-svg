@@ -2,6 +2,8 @@
 
 ## Synopsis
 
+![demo.gif](./demo.gif)
+
 [Demo and documentation](https://opuscapitabes.github.io/js-react-ui-svg)
 
 > Powered by [opuscapita-showroom](https://github.com/OpusCapitaBES/js-react-showroom-client)
