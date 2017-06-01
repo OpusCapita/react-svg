@@ -3,6 +3,10 @@
 ## Synopsis
 
 [Demo and documentation](https://opuscapita.github.io/react-svg)
+=======
+![demo.gif](./demo.gif)
+
+[Demo and documentation](https://opuscapita.github.io/react-svg/)
 
 > Powered by [OpusCapita Showroom](https://github.com/OpusCapita/react-showroom-client)
 
