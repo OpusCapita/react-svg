@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import React, { Component, PropTypes } from 'react';
 import s from './SVGIcon.module.less';
 import SVG from '../SVG';
@@ -26,12 +27,15 @@ class SVGIcon extends Component {
 }
 
 SVGIcon.propTypes = {
+  className: PropTypes.string,
   size: PropTypes.string,
   color: PropTypes.string,
-  bgColor: PropTypes.string
+  bgColor: PropTypes.string,
+  style: PropTypes.object
 };
 SVGIcon.defaultProps = {
   size: '24px',
   color: '#000',
-  bgColor: 'transparent'
+  bgColor: 'transparent',
+  style: { }
 };

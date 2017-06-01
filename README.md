@@ -2,9 +2,9 @@
 
 ## Synopsis
 
-[Demo and documentation](https://opuscapitabes.github.io/js-react-ui-svg)
+[Demo and documentation](https://opuscapita.github.io/react-svg)
 
-> Powered by [opuscapita-showroom](https://github.com/OpusCapitaBES/js-react-showroom-client)
+> Powered by [OpusCapita Showroom](https://github.com/OpusCapita/react-showroom-client)
 
 ## Usage
 

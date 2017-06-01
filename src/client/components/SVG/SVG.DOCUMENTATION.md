@@ -33,7 +33,7 @@ Simple SVG renderer
 You can `require` an **SVG** file content using **webpack**.
 
 ```
-let ShoppingCartIcon = require('!!raw-loader!opuscapita-ui-svg-icons/lib/add_shopping_cart.svg');
+let ShoppingCartIcon = require('!!raw-loader!@opuscapita/svg-icons/lib/add_shopping_cart.svg');
 
 ...
 <SVG

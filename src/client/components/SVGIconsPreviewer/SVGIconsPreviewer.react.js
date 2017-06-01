@@ -23,7 +23,9 @@ class SVGIconsPreviewer extends Component {
   }
 
   clearFilterInputTimeout() {
-    this._filterInputTimeout && clearTimeout(this._filterInputTimeout);
+    if (this._filterInputTimeout) {
+      clearTimeout(this._filterInputTimeout);
+    }
   }
 
   filterIconsLists(icons, filterText) {
@@ -43,7 +45,7 @@ class SVGIconsPreviewer extends Component {
   }
 
   render() {
-    let { icons, iconsProps, containerBgColor } = this.props;
+    let { iconsProps, containerBgColor } = this.props;
     let { filteredIcons } = this.state;
     let containerStyle = {
       backgroundColor: containerBgColor,
@@ -84,7 +86,7 @@ class SVGIconsPreviewer extends Component {
 
 SVGIconsPreviewer.propTypes = {
   iconsProps: PropTypes.object,
-  bgColor: PropTypes.object,
+  containerBgColor: PropTypes.object,
   icons: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     svg: PropTypes.string

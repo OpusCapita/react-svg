@@ -29,5 +29,5 @@ You can pass any **SVG component specific properties** to this component.
 
 ### FAQ
 
-Q: Where I can get an icons *.svg files? 
-A: You can use `opuscapita-svg-icons` package.
+Q: Where I can get an icons *.svg files?
+A: You can use `@opuscapita/svg-icons` package.

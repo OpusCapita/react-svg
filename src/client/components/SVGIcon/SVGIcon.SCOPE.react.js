@@ -1,5 +1,6 @@
-import React, { Component, PropTypes } from 'react';
-import { showroomScopeDecorator } from 'opuscapita-showroom-client';
+// eslint-disable-next-line no-unused-vars
+import React, { Component } from 'react';
+import { showroomScopeDecorator } from '@opuscapita/react-showroom-client';
 
 function requireAll(requireContext) {
   return requireContext.keys().map(key => ({
@@ -8,7 +9,7 @@ function requireAll(requireContext) {
   }));
 }
 
-let icons = requireAll(require.context('!!raw-loader!opuscapita-ui-svg-icons/lib', true, /.*\.svg$/));
+let icons = requireAll(require.context('!!raw-loader!@opuscapita/svg-icons/lib', true, /.*\.svg$/));
 
 @showroomScopeDecorator
 class SVGIconSCOPE extends Component {
