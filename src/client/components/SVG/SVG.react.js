@@ -1,18 +1,16 @@
 import React, { Component, PropTypes } from 'react';
-import s from './SVG.module.less';
-
-let defaultStyle = { height: '24px', width: '24px' };
+import './SVG.less';
 
 export default
 class SVG extends Component {
   render() {
-    let { svg, children, className } = this.props;
-    let style = Object.assign({}, defaultStyle, this.props.style);
+    let { svg, children, className, ...restProps } = this.props;
+
     return (
       <div
-        className={`${s.svg} ${className}`}
+        {...restProps}
+        className={`oc-svg ${className}`}
         dangerouslySetInnerHTML={{ __html: svg }}
-        style={style}
       >
         {children}
       </div>
