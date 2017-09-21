@@ -20,9 +20,11 @@ class SVGIcon extends Component {
 
 SVGIcon.propTypes = {
   className: PropTypes.string,
-  style: PropTypes.object
+  style: PropTypes.object,
+  svg: PropTypes.string
 };
 SVGIcon.defaultProps = {
   className: '',
-  style: { }
+  style: { },
+  svg: ''
 };
