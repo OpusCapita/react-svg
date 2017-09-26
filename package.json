@@ -34,7 +34,7 @@
     "@opuscapita/npm-scripts": "1.0.8",
     "@opuscapita/react-showroom-client": "1.2.8",
     "@opuscapita/react-showroom-server": "1.2.0",
-    "@opuscapita/svg-icons": "1.0.9",
+    "@opuscapita/svg-icons": "1.1.0",
     "autoprefixer": "6.4.1",
     "babel-cli": "6.5.1",
     "babel-core": "6.4.0",

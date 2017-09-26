@@ -25,8 +25,7 @@ Use it in collaboration with **Showroom** to get a possibility to check colors, 
   icons={_scope.state.icons}
   iconsProps={{
     color: '#333',
-    bgColor: '#fff',
-    size: '48px'
+    bgColor: '#fff'
   }}
 />
 ```
