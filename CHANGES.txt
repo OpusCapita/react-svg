@@ -1,4 +1,12 @@
 
+Release 2.0.1 Wed Sep 27 2017 09:13:55 GMT+0300 (+03)
+=======================================================
+
+ - Replace "React.PropTypes" => "prop-types" separate package (Kirill Volkovich <kirill.volkovich@jcatalog.com>, Wed Sep 27 09:13:08 2017 +0300)
+ - Update "@opuscapita/svg-icons" (Kirill Volkovich <kirill.volkovich@jcatalog.com>, Tue Sep 26 12:53:00 2017 +0300)
+ - Fix lint (Kirill Volkovich <kirill.volkovich@jcatalog.com>, Thu Sep 21 15:12:54 2017 +0300)
+ - Updating to a version to  2.0.1 (Kirill Volkovich <kirill.volkovich@jcatalog.com>, Mon Sep 11 17:29:31 2017 +0300)
+
 Release 2.0.0 Mon Sep 11 2017 17:29:20 GMT+0300 (+03)
 =======================================================
 
