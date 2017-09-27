@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+
+import React, { Component } from 'react';
 import './SVGIcon.less';
 import SVG from '../SVG';
 
