@@ -1,6 +1,6 @@
 {
   "name": "@opuscapita/react-svg",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "React components for SVG (Scalable Vector Graphic).",
   "scripts": {
     "npm-build": "rimraf lib && webpack --config webpack.production.config.js",
