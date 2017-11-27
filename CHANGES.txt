@@ -1,4 +1,10 @@
 
+Release 2.0.2 Mon Nov 27 2017 23:39:45 GMT+0300 (+03)
+=======================================================
+
+ - #1 Build using "webpack" instead of "babel --copy-files" (Kirill Volkovich <kirill.volkovich@opuscapita.com>, Mon Nov 27 23:38:48 2017 +0300)
+ - Updating to a version to  2.0.2 (Kirill Volkovich <kirill.volkovich@jcatalog.com>, Wed Sep 27 09:14:06 2017 +0300)
+
 Release 2.0.1 Wed Sep 27 2017 09:13:55 GMT+0300 (+03)
 =======================================================
 
