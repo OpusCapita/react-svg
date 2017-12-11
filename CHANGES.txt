@@ -1,4 +1,14 @@
 
+Release 4.0.0 Mon Dec 11 2017 16:27:34 GMT+0300 (+03)
+=======================================================
+
+ - Increment major package version (Kirill Volkovich <kirill.volkovich@jcatalog.com>, Mon Dec 11 16:27:13 2017 +0300)
+ - Merge pull request #3 from OpusCapita/drop-react-14/#2
+    
+     #2 Drop React v. 0.14.x support (1e98a26 0c66b8a, Kirill Volkovich <kvolkovich-sc@users.noreply.github.com>)
+ - #2 Drop React v. 0.14.x support (Kirill Volkovich <kirill.volkovich@jcatalog.com>, Mon Dec 11 16:24:30 2017 +0300)
+ - Updating to a version to  3.0.2 (Kirill Volkovich <kirill.volkovich@opuscapita.com>, Tue Nov 28 00:26:50 2017 +0300)
+
 Release 3.0.1 Tue Nov 28 2017 00:26:36 GMT+0300 (+03)
 =======================================================
 
