@@ -14,7 +14,6 @@ Use it in collaboration with **Showroom** to get a possibility to check colors, 
 | ------------------------------|:----------------------| -----------------------------------------------------------|
 | containerBgColor | string | Background color of previewer container |
 | icons | arrayOf({ name: string, svg: string }) | Collection of icons |
-| iconsProps | object | Object pass to each **SVGIcon** component |
 
 
 ### Code Example
@@ -23,10 +22,6 @@ Use it in collaboration with **Showroom** to get a possibility to check colors, 
 <SVGIconsPreviewer
   containerBgColor="#fff"
   icons={_scope.state.icons}
-  iconsProps={{
-    color: '#333',
-    bgColor: '#fff'
-  }}
 />
 ```
 
