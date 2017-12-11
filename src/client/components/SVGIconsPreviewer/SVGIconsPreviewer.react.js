@@ -41,17 +41,18 @@ class SVGIconsPreviewer extends Component {
       this.setState({
         filterInputValue: value,
         filteredIcons
-      })
+      });
     }, 250);
   }
 
   render() {
-    let { iconsProps, containerBgColor } = this.props;
+    let { containerBgColor } = this.props;
     let { filteredIcons } = this.state;
     let containerStyle = {
       backgroundColor: containerBgColor,
-      color: (iconsProps && iconsProps.color) || '#000'
-    }
+      color: '#000'
+    };
+
     return (
       <div className={s.svgIconsPreviewer}>
         <div className={s.filterInput}>
@@ -71,7 +72,7 @@ class SVGIconsPreviewer extends Component {
                 key={index}
               >
                 <div className={s.itemRenderer}>
-                  {<SVGIcon svg={icon.svg} { ...iconsProps } />}
+                  {<SVGIcon svg={icon.svg} />}
                 </div>
                 <div className={s.itemName}>
                   <span>{icon.name.replace(/^svg/gi, '')}</span>
@@ -86,7 +87,6 @@ class SVGIconsPreviewer extends Component {
 }
 
 SVGIconsPreviewer.propTypes = {
-  iconsProps: PropTypes.object,
   containerBgColor: PropTypes.string,
   icons: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
