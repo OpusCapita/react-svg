@@ -24,8 +24,8 @@
 #### Import component
 
 ```
-import { SVG } from '@opuscapita/react-svg
-import SVGIcon from '@opuscapita/react-svg/lib/SVGIcon
+import { SVG } from '@opuscapita/react-svg'
+import SVGIcon from '@opuscapita/react-svg/lib/SVGIcon'
 ...
 ```
 
